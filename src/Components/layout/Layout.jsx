@@ -2,10 +2,10 @@ import React from 'react'
 
 const Layout = ({children}) => {
   return (
-    <div className='max-h-7xl m-auto w-full'>
+    <div className='max-w-7xl w-full m-auto p-4'>
       {children}
     </div>
   )
 }
 
-export default Layout
+export default Layout;

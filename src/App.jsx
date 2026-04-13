@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import Footer from './Components/Footer/Footer'
-import Employee from './Components/Employee/Employee'
+import EmployeeLists from './Components/Employees/EmployeeLists'
 
 const App = () => {
   return (
@@ -9,7 +9,7 @@ const App = () => {
    <div className='min-h-screen w-full flex flex-col'>
     <Navbar/>
     <div className='flex-1'>
-      
+      <EmployeeLists />
     </div>
     <Footer />
    </div>
