@@ -6,13 +6,13 @@ import EmployeeLists from './Components/Employees/EmployeeLists'
 const App = () => {
   return (
     <>
-   <div className='min-h-screen w-full flex flex-col'>
-    <Navbar/>
-    <div className='flex-1'>
-      <EmployeeLists />
+    <div data-theme="dark" className='min-h-screen w-full flex flex-col bg-base-200'>
+      <Navbar/>
+      <div className='flex-1 py-10'>
+        <EmployeeLists />
+      </div>
+      <Footer />
     </div>
-    <Footer />
-   </div>
     </>
   )
 }

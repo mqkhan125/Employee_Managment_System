@@ -4,11 +4,13 @@ import { FaPlus } from "react-icons/fa6";
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 z-50 bg-base-200">
+    <div className="sticky top-0 z-50 bg-base-100">
       <Layout>
         <div className="navbar shadow-sm">
           <div className="navbar-start">
-            <a className="btn btn-ghost text-xl">daisyUI</a>
+            <a className="btn btn-ghost text-xl text-primary">
+              Employees Management System
+            </a>
           </div>
           <div className="navbar-end">
             <button className="btn btn-ghost btn-circle">

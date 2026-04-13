@@ -16,6 +16,10 @@ const EmployeeLists = () => {
          <EmployeeCard />
          <EmployeeCard />
          <EmployeeCard />
+         <EmployeeCard />
+         <EmployeeCard />
+         <EmployeeCard />
+         <EmployeeCard />
       </ul>
     </Layout>
   );
