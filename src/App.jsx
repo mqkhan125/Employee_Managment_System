@@ -6,7 +6,13 @@ import Employee from './Components/Employee/Employee'
 const App = () => {
   return (
     <>
- <Navbar/>
+   <div className='min-h-screen w-full flex flex-col'>
+    <Navbar/>
+    <div className='flex-1'>
+      
+    </div>
+    <Footer />
+   </div>
     </>
   )
 }

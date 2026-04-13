@@ -1,9 +1,9 @@
 import React from 'react'
-import Loyout from '../layout/Loyout';
+import Layout from '../layout/Layout';
 
 const Navbar = () => {
   return (
-    <Loyout>
+    <Layout>
 
     <div className="navbar bg-base-100 shadow-sm">
       <div className="navbar-start">
@@ -49,7 +49,7 @@ const Navbar = () => {
         </button>
       </div>
     </div>
-   </Loyout>
+   </Layout>
   );
 }
 

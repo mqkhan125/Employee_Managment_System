@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Loyout = ({children}) => {
+const Layout = ({children}) => {
   return (
     <div className='max-h-7xl m-auto w-full'>
       {children}
@@ -8,4 +8,4 @@ const Loyout = ({children}) => {
   )
 }
 
-export default Loyout
+export default Layout
