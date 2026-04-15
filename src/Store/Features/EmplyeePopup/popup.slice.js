@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     employeePopup: false,
-    deletPopup : false,
+    deletePopup : false,
 }
 
 const employeePopupSlice = createSlice({
@@ -15,9 +15,15 @@ const employeePopupSlice = createSlice({
         },
         closeEmployeePopup: (state) => {
             state.employeePopup = false
+        },
+        openDeletePopup: (state, action) => {
+            state.deletePopup = action.payload ?? true
+        },
+        closeDeletePopup: (state) => {
+            state.deletePopup = false
         }
     }
 })
 
-export const { openEmployeePopup, closeEmployeePopup } = employeePopupSlice.actions
+export const { openEmployeePopup, closeEmployeePopup, openDeletePopup, closeDeletePopup } = employeePopupSlice.actions
 export default employeePopupSlice.reducer

@@ -2,10 +2,13 @@ import React from "react";
 import Layout from "../layout/Layout";
 import { MdDeleteOutline } from "react-icons/md";
 import { CiEdit } from "react-icons/ci";
+import { useDispatch } from "react-redux";
+import { openDeletePopup } from "../../Store/Features/EmplyeePopup/popup.slice";
 
 
 
 const EmployeeLists = () => {
+
   return (
     <Layout>
       <ul className="list bg-base-100 rounded-box shadow-md">
@@ -26,6 +29,8 @@ const EmployeeLists = () => {
 };
 
   const EmployeeCard = () => {
+    const dispatch = useDispatch();
+
     return (
       <div className="card w-full bg-base-100 shadow-md">
         <li className="list-row">
@@ -44,7 +49,7 @@ const EmployeeLists = () => {
           <button className="btn btn-square btn-ghost">
             <CiEdit className="text-xl" />
           </button>
-          <button className="btn btn-square btn-ghost">
+          <button onClick={() => dispatch(openDeletePopup())} className="btn btn-square btn-ghost">
             <MdDeleteOutline className="text-xl" />
           </button>
           <button className="btn btn-square btn-ghost">
